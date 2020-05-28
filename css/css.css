@@ -37,7 +37,7 @@ body {
 	display: flex;
 }
 
-img {
+.img {
 	height: 50px;
 	width: 50px;
 	border-radius: 100%;
@@ -96,6 +96,19 @@ ul li a:hover {
 	float: left;
 	margin-left: 2rem;
 	padding: 2rem;
+}
+
+h1 {
+	text-align: center;
+}
+
+.img-centro {
+	height: 250px;
+	width: 250px;
+	/* text-align: center; */
+	border-radius: 100%;
+	margin-top: -3%;
+	position: fixed;
 }
 
 .footer {
