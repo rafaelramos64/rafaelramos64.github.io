@@ -176,6 +176,7 @@ h1 {
 	color: #fff;
 	bottom: 0;
 	position: fixed;
+	box-shadow: 0 0px 1.2px 0px #fff;
 }
 
 .p {
