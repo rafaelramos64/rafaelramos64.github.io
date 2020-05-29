@@ -72,7 +72,7 @@ body {
 	transition-duration: 1s;
 	--navbar-link: rgba(0,0,0,.5);
 	--img-central: rgba(0,0,0,.5);
-	--img-navbar: rgba(0,0,0,.5);
+	--img-navbar: rgba(0,0,0,.8);
 }
 
 .figure {
@@ -98,6 +98,7 @@ body {
 	margin-right: .3125rem;
 	border-style: none;
 	box-shadow: 0px 1px 3px var(--img-navbar);
+	transition: 1s;
 }
 
 span {
