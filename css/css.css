@@ -4,7 +4,10 @@
 
 :root {
 	--navbar-link: #fff;
-	--sombra-img-central: rgba(255, 255, 255, .5);
+	--img-central: rgba(255, 255, 255, .5);
+	--img-navbar: rgba(255, 255, 255, .5);
+	--bg-img: none;
+	--bg-shadow: 0px 0px 8px none;
 }
 
 html {
@@ -68,7 +71,8 @@ body {
 	transition-delay: .0.5s;
 	transition-duration: 1s;
 	--navbar-link: rgba(0,0,0,.5);
-	--sombra-img-central: --navbar-link;
+	--img-central: rgba(0,0,0,.5);
+	--img-navbar: rgba(0,0,0,.5);
 }
 
 .figure {
@@ -86,13 +90,14 @@ body {
 }
 
 .img {
-	height: 50px;
+	height: 55px;
 	width: 60px;
-	border-radius: 100%;
+	border-radius: 50%;
 	vertical-align: middle;
-	padding-left: .3125rem;
-	padding-right: .3125rem;
+	margin-left: .3125rem;
+	margin-right: .3125rem;
 	border-style: none;
+	box-shadow: 0px 1px 3px var(--img-navbar);
 }
 
 span {
@@ -185,22 +190,30 @@ h1 {
 }
 
 .img-centro {
-	height: auto;
+	height: 200px;
 	width: 200px;
 	/* text-align: center; */
-	border-radius: 100%;
+	border-radius: 100px;
 	margin-top: -3%;
 	position: fixed;
-	box-shadow: 0px 0px 3.8px var(--sombra-img-central);
+	box-shadow: 0px 0px 3.8px var(--img-central);
 	transition: 1s;
 }
 
 .img-centro:hover {
-	box-shadow: 0px 0px 8px rgba(255, 255, 255, .5);
-	width: 203px;
+	box-shadow: 0px 0px 6px #fff;
 	transition-delay: .0.5s;
 	transition-duration: 1s;
+	--bg-img: rgba(41,44,51,.3);
+	--bg-shadow: 0px 0px 8px #fff;
 } 
+
+.sombra-bg-img {
+	transition: 1s;
+	background: var(--bg-img);
+	border-radius: 100px;
+	box-shadow: var(bg-shadow);
+}
 
 .footer {
 	width: 100%;
