@@ -59,7 +59,6 @@ body {
 	/* border-bottom: 1px solid rgba(0,0,0,.125);
 	box-shadow: 0 1px 5px 0 rgba(0,0,0,.16);  */
 	display: flex;
-	cursor: pointer;
 	transition: 1s;
 }
 
@@ -99,17 +98,19 @@ body {
 	border-style: none;
 	box-shadow: 0px 1px 3px var(--img-navbar);
 	transition: 1s;
+	cursor: pointer;
 }
 
-span {
+.span-nome {
 	font-size: 20px;
 	font-weight: bold;
 	padding: .9rem .2rem;
 	margin: 0;
+	cursor: pointer;
 }
 
 .links {
-	width: 80%;
+	width: 75%;
 	padding-right: 2rem;
 }
 
@@ -118,23 +119,25 @@ ul li {
 }
 
 ul {
-	height: 100%;
+	height: inherit;
 	display: inline-flex;
-	float: right;	
+	position: absolute;
+	right: 0;
 	margin: 0;
+	padding: 15px 0;
+	margin-right: 2rem;
 }
 
 li {
-	height: 100%;
+	height: inherit;
 	display: list-item;
 	text-align: -webkit-match-parent;
 	vertical-align: -webkit-baseline-middle;
 }
 
 ul li a {
-	height: 60%;
-	margin-top: .5em;
-	padding-top: .5em;
+	height: 30px;
+	padding-top: .3em;
 	display: inline-block;
 	text-decoration: none;
 	cursor: pointer;
@@ -153,6 +156,14 @@ ul li a:hover {
 	color: rgba(0,0,0,.7);
 }
 
+/* .a:visited {
+	color: #ce242a;
+} */
+
+.a:active {
+	color: hotpink;
+}
+
 .barra {
 	border-left: 3px solid #ce242a;
 	padding-left: 1em;
@@ -168,7 +179,11 @@ ul li a:hover {
 
 .text-bio {
 	font-size: 20px;
-	font-family: 'Times New Roman', Times, serif;
+	/* font-family: 'Times New Roman', Times, serif; */
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	/* font-family: Georgia; */
+	/* font-family: 'Courier New', Courier, monospace; */
+	/* font-family: cursive; */
 	color: #fff;
 	top: 2.5rem;
 	text-align: justify;
@@ -285,9 +300,29 @@ h1 {
 	font-size: 2.1rem;
 }
 
-/* i {
-	cursor: pointer;
-} */
+.tooltips {
+	visibility: hidden;
+	width: 120px;
+	background-color: #000;
+	color: #ce242a;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	font-family: Comfortaa;
+	font-size: 13px;
+	/* Posição do balão */
+	position: absolute;
+	z-index: 1;
+	bottom: 130%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+i:hover .tooltips {
+	visibility: visible;
+	text-shadow: none;
+	box-shadow: 0px 0px  .8px rgba(255, 255, 255, .5);
+}
 
 .icones {
 	width: 45%;
