@@ -8,6 +8,7 @@
 	--img-navbar: rgba(255, 255, 255, .5);
 	--bg-img: none;
 	--bg-shadow: 0px 0px 8px none;
+	--cor-nome: #fff;
 }
 
 html {
@@ -60,6 +61,7 @@ body {
 	box-shadow: 0 1px 5px 0 rgba(0,0,0,.16);  */
 	display: flex;
 	transition: 1s;
+	/* position: fixed; */
 }
 
 .navbar:hover {
@@ -72,6 +74,7 @@ body {
 	--navbar-link: rgba(0,0,0,.5);
 	--img-central: rgba(0,0,0,.5);
 	--img-navbar: rgba(0,0,0,.8);
+	--cor-nome: #000;
 }
 
 .figure {
@@ -102,11 +105,13 @@ body {
 }
 
 .span-nome {
+	transition: 1s;
 	font-size: 20px;
 	font-weight: bold;
 	padding: .9rem .2rem;
 	margin: 0;
 	cursor: pointer;
+	color: var(--cor-nome);
 }
 
 .links {
@@ -172,7 +177,9 @@ ul li a:hover {
 .nav-side {
 	align-items: center;
 	width: 35%;
-	float: left;
+	/* float: left; */
+	display: block;
+	position: absolute;
 	/* margin-left: 2rem; */
 	padding-left: 2rem;
 }
@@ -211,7 +218,7 @@ h1 {
 	/* text-align: center; */
 	border-radius: 100px;
 	margin-top: -3%;
-	position: fixed;
+	position: absolute;
 	box-shadow: 0px 0px 3.8px var(--img-central);
 	transition: 1s;
 }
